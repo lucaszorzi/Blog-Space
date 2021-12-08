@@ -1,6 +1,8 @@
 # Project
 
-This project was built with Node.js, using Express, MySQL (with Sequelize) and EJS with Bootstrap.
+This project is Blog who has space to post articles liked by categories and admin auth to post/edit.
+
+It was built with Node.js, using Express, MySQL (with Sequelize) and EJS with Bootstrap.
 
 
 <div align="center">
