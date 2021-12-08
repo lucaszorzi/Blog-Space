@@ -4,7 +4,7 @@ This project was built with Node.js, using Express, MySQL (with Sequelize) and E
 
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Blog-Space/tree/main/public/images/system_pic.png">
+  <img src="https://github.com/lucaszorzi/Blog-Space/blob/main/public/images/system_pic.png?raw=true">
 </div>
 
 
@@ -12,7 +12,7 @@ This project was built with Node.js, using Express, MySQL (with Sequelize) and E
 
 Run `npm i` in the root folder to install all packages.
 
-Make sure you have MySQL installed in your computer and change the `database/database.js` file with your authentication.
+Make sure you have MySQL installed in your computer and change the `database/connection.js` file with your authentication.
 
 Then run `nodemon index.js` to run the application.
 
