@@ -1,0 +1,27 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg" id="navbar">
+    <a href="/" class="navbar-brand">BLOG SPACE</a>
+
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/articles">Artigos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/categories">Categorias</a>
+        </li>
+        <% categories.forEach(category => { %>
+            <li class="nav-item">
+                <a class="nav-link" href="/category/<%= category.slug %>"><%= category.title %></a>
+            </li>
+        <% }) %>
+    </ul>
+
+    
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item" >
+                <a class="nav-link" href="/admin/logout">Logout</a>
+                <a class="nav-link" href="/admin/login">Login</a>
+
+        </li>
+    </ul>
+
+</nav>

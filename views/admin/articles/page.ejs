@@ -1,0 +1,32 @@
+<%- include ('../../partials/header.ejs'); %>
+<%- include ('../../partials/navbar.ejs'); %>
+<body>
+    <div class="container">
+
+        <% result.articles.rows.forEach(article => { %>
+            <div class="card">
+                <div class="card-header">
+                    <a href="/<%= article.slug %>" style="text-decoration: none; color: inherit;"><h2><%= article.title %></h2></a>
+                </div>
+    
+                <div class="card-body">
+
+                </div>
+            </div>
+            <br>
+        <% }) %>
+
+        <div class="row">
+            <div class="col-12">
+                <a style="float: left;" href="/articles/page/<%= result.page - 1 %>"><< Anterior</a>
+
+                <% if(result.next) { %>
+                    <a style="float: right;" href="/articles/page/<%= result.page + 1 %>">Próxima >></a>
+                <% } %>
+                <br>
+            </div>
+        </div>
+
+    </div>
+</body>
+<%- include ('../../partials/footer.ejs'); %>

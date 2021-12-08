@@ -1,0 +1,22 @@
+<%- include ('../../partials/header.ejs'); %>
+<%- include ('../../partials/navbar.ejs'); %>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Login de Administração</h2>
+            </div>
+
+            <div class="card-body">
+                <form method="POST" action="/admin/auth">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" placeholder="exemplo@server.com" class="form-control mb-3">
+                    <label for="password">Senha: </label>
+                    <input type="password" name="password" placeholder="*******" class="form-control">
+                    <button type="submit" class="btn btn-dark col-12 mt-4">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include ('../../partials/footer.ejs'); %>
