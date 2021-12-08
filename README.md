@@ -1,6 +1,6 @@
 # Project
 
-This project is Blog who has space to post articles liked by categories and admin auth to post/edit.
+This project is a Blog who has space to post articles linked by categories and admin auth to post/edit them.
 
 It was built with Node.js, using Express, MySQL (with Sequelize) and EJS with Bootstrap.
 
